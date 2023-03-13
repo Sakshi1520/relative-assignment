@@ -5,12 +5,12 @@ import {coinsData, dataItem} from './data';
 
 function App() {
   return (
-    <div className="App p-20">
+    <div className="App p-4 md:p-20">
       <div className='flex  items-center pb-14'>
         <img className='mr-5 w-4 h-4' src='assets/images/activity.svg' alt='trending assets' />
         <h1 className="text-base font-bold">Trending Assets</h1>
       </div>
-      <div className='flex gap-16 flex-wrap'>
+      <div className='flex justify-center md:justify-start gap-16 flex-wrap'>
         {coinsData.map((item: dataItem, index: number) => (
           <DetailCard key={index} item={item}/>
         ))}
