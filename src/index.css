@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #14172B;
+  --secondary-color: #ECF0FF;
+  --tertiary-color: #737BAE;
+  --green-color: #00FFA3;
+  --red-color: #FF4D4D;
+}
+
+body {
+  font-family: 'Tomorrow', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-sizing: border-box;
+}

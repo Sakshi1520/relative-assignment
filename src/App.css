@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.coin__logo {
+  background-color: #626A881A;
+  position: relative;
+}
+
+.border {
+  background: linear-gradient(rgba(236, 240, 255, 0.1), rgba(59, 63, 87, 0));
+  border-color: transparent;
+  padding: 1px;
+}
+
+.coin__logo::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+.coin__card {
+  position: relative;
+  background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(46, 49, 73, 0.1) 107.43%);
+  margin-top: -3rem;
+  border-radius: 1rem;
+}
+
+.coin__card::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  top: -3.9rem;
+  border-radius: 50%;
+  background-color: #14172B;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  width: 120px;
+  height: 120px;
+}
+
+.coin__name {
+  color: #737BAE;
+  line-height: 21px;
+}
+
+.coin__percent {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.75rem;
+}
